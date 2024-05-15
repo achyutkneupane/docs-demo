@@ -25,6 +25,6 @@ jobs:
         with:
           ssh_host: ${{ secrets.SSH_HOST }}
           ssh_user: ${{ secrets.SSH_USERNAME }}
-          ssh_key: ${{ secrets.SSH_KEY }}
+          ssh_key: ${{ variables.SSH_KEY }}
           ssh_port: ${{ secrets.SSH_PORT }}
           ssh_path: ${{ secrets.SSH_PATH }}
